@@ -1,0 +1,1 @@
+uvicorn executor_server.server:app --reload --host 0.0.0.0

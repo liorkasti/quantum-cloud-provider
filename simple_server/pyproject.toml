@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "executor_server"
+version = "0.0.0"
+description = ""
+authors = ["Classiq Technologies <support@classiq.io>"]
+license = "Proprietary"
+
+[tool.poetry.dependencies]
+python = ">=3.11, <3.12"
+fastapi = "0.97.0"
+qiskit = "0.43.1"
+uvicorn = "0.22.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.importlinter]
+root_package = "ide.ide_tests"
+contract_types = ["whitelist_import: whitelist_contract.WhitelistImportContract"]
+include_external_packages = "True"
+
